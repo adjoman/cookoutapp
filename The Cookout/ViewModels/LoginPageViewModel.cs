@@ -5,9 +5,9 @@ using Amazon.CognitoIdentityProvider;
 using Amazon.CognitoIdentityProvider.Model;
 using Amazon;
 using Amazon.Runtime;
-using NiftyNeighbor;
+using The_Cookout;
 
-namespace NiftyNeighbor.ViewModels
+namespace The_Cookout.ViewModels
 {
     public class LoginPageViewModel : BaseViewModel
     {

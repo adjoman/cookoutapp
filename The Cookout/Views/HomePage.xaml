@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="The_Cookout.Views.HomePage"
+             Title="HomePage">
+    <StackLayout Spacing="0">
+
+        <SearchBar
+                   Margin="25,0,25,0"
+                   Placeholder="Search..."
+                   HorizontalOptions="FillAndExpand">
+            <!--<SearchBar.RightView>
+                <Image Source="filter.png" />
+            </SearchBar.RightView>-->
+        </SearchBar>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="control_image.png" Margin="5" />
+                <Label Text="Control Label" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <Image Source="right_arrow.png" Grid.Column="1" HorizontalOptions="End" Margin="5" />
+        </Grid>
+
+        <CollectionView ItemsLayout="HorizontalList" ItemsSource="{Binding Items}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10" WidthRequest="250">
+                        <Label Text="{Binding Title}"
+                               FontSize="24"/>
+                        <Label Text="{Binding Description}"
+                               FontSize="16"/>
+                    </StackLayout>
+                </DataTemplate>
+        </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Label Text="Order Again" HorizontalOptions="StartAndExpand" />
+            <Label Text="See all" HorizontalOptions="EndAndExpand" />
+        </StackLayout>
+
+        <ListView>
+            <!-- Bind to data -->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame CornerRadius="10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Image Source="{Binding Image}" Grid.RowSpan="3" />
+                                <Label Text="{Binding Label}" Grid.Column="1" />
+                                <Label Text="{Binding Size}" Grid.Column="1" Grid.Row="1" />
+                                <Label Text="{Binding Price}" Grid.Column="1" Grid.Row="2" VerticalOptions="End" />
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label Text="Nifty Suggestions" />
+
+        <CollectionView ItemsLayout="HorizontalList">
+            <!-- Bind to images -->
+        </CollectionView>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Image Source="home.png" />
+            <Image Source="reorder.png" />
+            <Image Source="reorder.png" />
+            <Image Source="rewards.png" />
+            <Image Source="account.png" />
+        </StackLayout>
+
+        <Button Text="My Cart" CornerRadius="20" HorizontalOptions="FillAndExpand" />
+
+    </StackLayout>
+</ContentPage>

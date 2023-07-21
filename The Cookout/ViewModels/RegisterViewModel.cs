@@ -8,9 +8,9 @@ using Amazon.CognitoIdentityProvider;
 using System.Runtime.CompilerServices;
 using Amazon.CognitoIdentityProvider.Model;
 using System.Text.RegularExpressions;
-using NiftyNeighbor;
+using The_Cookout;
 
-namespace NiftyNeighbor.ViewModels
+namespace The_Cookout.ViewModels
 {
     public class RegisterViewModel : INotifyPropertyChanged
     {

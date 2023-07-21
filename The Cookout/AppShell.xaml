@@ -3,12 +3,12 @@
     x:Class="The_Cookout.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:The_Cookout"
+    xmlns:local="clr-namespace:The_Cookout.Views"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        ContentTemplate="{DataTemplate local:LoginView}"
         Route="MainPage" />
 
 </Shell>

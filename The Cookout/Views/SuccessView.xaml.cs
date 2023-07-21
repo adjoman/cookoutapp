@@ -1,4 +1,4 @@
-﻿using NiftyNeighbor.ViewModels;
+﻿using The_Cookout.ViewModels;
 
 namespace The_Cookout.Views
 {

@@ -2,9 +2,9 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using NiftyNeighbor.Models;
+using The_Cookout.Models;
 
-namespace NiftyNeighbor.ViewModels
+namespace The_Cookout.ViewModels
 {
 	public class HomePageViewModel: INotifyPropertyChanged
     {

@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace NiftyNeighbor.ViewModels
+namespace The_Cookout.ViewModels
 {
 	public class BaseViewModel : INotifyPropertyChanged
     {

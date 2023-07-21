@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Maui.Views;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.Win32;
-using NiftyNeighbor.ViewModels;
+using The_Cookout.ViewModels;
 
 namespace The_Cookout.Views
 {

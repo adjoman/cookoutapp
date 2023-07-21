@@ -53,17 +53,25 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.2" />
+		<PackageReference Include="AWSSDK.CognitoIdentityProvider" Version="3.7.200.2" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="5.2.0" />
+		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />
 	  <None Remove="ViewModels\Base\" />
+	  <None Remove="Models\" />
+	  <None Remove="Utilities\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
 	  <Folder Include="ViewModels\" />
 	  <Folder Include="ViewModels\Base\" />
+	  <Folder Include="Models\" />
+	  <Folder Include="Utilities\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="Views\LoginView.xaml">
@@ -73,6 +81,12 @@
 	    <SubType></SubType>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\RegisterView.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ForgotPassword.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HomePage.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
 	</ItemGroup>
