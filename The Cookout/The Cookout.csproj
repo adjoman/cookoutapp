@@ -65,6 +65,8 @@
 	  <None Remove="ViewModels\Base\" />
 	  <None Remove="Models\" />
 	  <None Remove="Utilities\" />
+	  <None Remove="Resources\Fonts\Antone-Block.otf" />
+	  <None Remove="Resources\Fonts\Antone-Clean.otf" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
@@ -89,5 +91,9 @@
 	  <MauiXaml Update="Views\HomePage.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Fonts\Antone-Block.otf" />
+	  <BundleResource Include="Resources\Fonts\Antone-Clean.otf" />
 	</ItemGroup>
 </Project>

@@ -5,6 +5,8 @@
              x:Class="The_Cookout.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Color x:Key="DarkGreyColor">#757575</Color>
+            <Color x:Key="ButtonBlue">#1B253A</Color>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />

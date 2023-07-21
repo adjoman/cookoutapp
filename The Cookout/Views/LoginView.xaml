@@ -6,16 +6,16 @@
     <ScrollView>
         <StackLayout Padding="20">
 
-            <Image Source="applogo.png"
+            <Image Source="applogo"
                    HeightRequest="180"
                    Margin="0, 15"/>
 
             <Label Text="Sign in to continue"
                    FontSize="24"
-                   FontFamily="Poppins"
+                   FontFamily="AntoneBlock"
                    TextColor="{StaticResource DarkGreyColor}"
                    HorizontalOptions="Center"
-                   Margin="0, 0, 0, 10"/>
+                   Margin="0, 20, 0, 10"/>
 
             <StackLayout Spacing="10" >
                 <Entry Text="{Binding Email}"
@@ -33,12 +33,12 @@
                        FontFamily="Poppins"
                        TextColor="{StaticResource DarkGreyColor}"
                        HorizontalOptions="FillAndExpand"
-                       Margin="0,10,0,10" />
+                       Margin="0,10,0,15" />
             </StackLayout>
  
             <Label Text="Forgot password?"
                    TextColor="{StaticResource NiftyRed}"
-                   FontFamily="PoppinsItalic"
+                   FontFamily="AntoneClean"
                    FontSize="12"
                    HorizontalOptions="End">
                 <Label.GestureRecognizers>
@@ -50,9 +50,9 @@
             <Button 
                 Text="Sign In"
                 FontSize="16"
-                FontFamily="Poppins"
+                FontFamily="AntoneBlock"
                 HeightRequest="46" 
-                BackgroundColor="#000000" 
+                BackgroundColor="{StaticResource ButtonBlue}" 
                 TextColor="#EFFBFF"
                 Command="{Binding SignInCommand}"
                 Margin="0,15,0,32" />
@@ -61,11 +61,11 @@
                          HorizontalOptions="Center"
                          Spacing="5">
                 <Label Text="Don't have account?"
-                       FontFamily="Poppins"
+                       FontFamily="AntoneClean"
                        FontSize="14"/>
                 <Label Text="Sign up"
                        TextColor="{StaticResource NiftyTurquoise}"
-                       FontFamily="PoppinsItalic"
+                       FontFamily="AntoneClean"
                        FontSize="14">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer
