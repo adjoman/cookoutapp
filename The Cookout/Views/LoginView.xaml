@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="The_Cookout.Views.LoginView"
+             Title="LoginView">
+    <ScrollView>
+        <StackLayout Padding="20">
+
+            <Image Source="applogo.png"
+                   HeightRequest="180"
+                   Margin="0, 15"/>
+
+            <Label Text="Sign in to continue"
+                   FontSize="24"
+                   FontFamily="Poppins"
+                   TextColor="{StaticResource DarkGreyColor}"
+                   HorizontalOptions="Center"
+                   Margin="0, 0, 0, 10"/>
+
+            <StackLayout Spacing="10" >
+                <Entry Text="{Binding Email}"
+                       Placeholder="Email"
+                       IsPassword="False"
+                       TextTransform="Lowercase"
+                       FontFamily="Poppins"
+                       TextColor="{StaticResource DarkGreyColor}"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="0,5,0,10" />
+
+                <Entry Text="{Binding Password}"
+                       Placeholder="Password"
+                       IsPassword="True"
+                       FontFamily="Poppins"
+                       TextColor="{StaticResource DarkGreyColor}"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="0,10,0,10" />
+            </StackLayout>
+ 
+            <Label Text="Forgot password?"
+                   TextColor="{StaticResource NiftyRed}"
+                   FontFamily="PoppinsItalic"
+                   FontSize="12"
+                   HorizontalOptions="End">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="ForgotPassword_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Button 
+                Text="Sign In"
+                FontSize="16"
+                FontFamily="Poppins"
+                HeightRequest="46" 
+                BackgroundColor="#000000" 
+                TextColor="#EFFBFF"
+                Command="{Binding SignInCommand}"
+                Margin="0,15,0,32" />
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Spacing="5">
+                <Label Text="Don't have account?"
+                       FontFamily="Poppins"
+                       FontSize="14"/>
+                <Label Text="Sign up"
+                       TextColor="{StaticResource NiftyTurquoise}"
+                       FontFamily="PoppinsItalic"
+                       FontSize="14">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnSignupTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

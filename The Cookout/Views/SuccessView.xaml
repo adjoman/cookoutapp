@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="The_Cookout.Views.SuccessView">
+    <StackLayout
+        Orientation="Vertical"   
+        VerticalOptions="CenterAndExpand">
+
+        <Image
+            HeightRequest="175"
+            Source="checkmark.png"/>
+
+        <Label
+            Margin="0,20,0,0"
+            FontFamily="PoppinsBold"
+            FontSize="20"
+            TextColor="{StaticResource DarkGreyColor}"
+            HorizontalOptions="CenterAndExpand"
+            Text="Success!"/>
+
+        <Label
+            Margin="0,5,0,20"
+            FontFamily="PoppinsBold"
+            FontSize="20"
+            TextColor="{StaticResource DarkGreyColor}"
+            HorizontalOptions="CenterAndExpand"
+            Text="Your account has been created."/>
+
+        <Button
+            Margin="40,30,40,20"
+            FontFamily="PoppinsBold"
+            Command="{Binding CompleteRegistrationCommand}"
+            BackgroundColor="{StaticResource NiftyTurquoise}"
+            Text="Continue" />
+
+    </StackLayout>
+</ContentPage>
