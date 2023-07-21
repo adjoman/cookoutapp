@@ -7,6 +7,7 @@
         <ResourceDictionary>
             <Color x:Key="DarkGreyColor">#757575</Color>
             <Color x:Key="ButtonBlue">#1B253A</Color>
+            <Color x:Key="CookoutOrange">#EA5B0C</Color>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />

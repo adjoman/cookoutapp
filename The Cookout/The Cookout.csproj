@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>The Cookout</ApplicationTitle>
+		<ApplicationTitle>Cookout</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.thecookoutapp.com</ApplicationId>

@@ -37,7 +37,7 @@
             </StackLayout>
  
             <Label Text="Forgot password?"
-                   TextColor="{StaticResource NiftyRed}"
+                   TextColor="{StaticResource CookoutOrange}"
                    FontFamily="AntoneClean"
                    FontSize="12"
                    HorizontalOptions="End">
