@@ -25,28 +25,28 @@
                Source="applogo"
                HeightRequest="180"
                Aspect="AspectFit"
-               Margin="25,20,25,-20" />
+               Margin="25,20,25,20" />
 
         <StackLayout Grid.Row="1" Margin="25,0,25,18">
             <Label Text="Full Name"
-                   FontFamily="DMSans"
+                   FontFamily="AntoneClean"
                    FontSize="12"
                    Margin="0,0,0,5"
                    TextColor="{StaticResource LabelGrey}" />
             <Entry x:Name="FullNameEntry"
-                   FontFamily="DMSans"
+                   FontFamily="AntoneClean"
                    Text="{Binding FullName}"
                    Placeholder="Full Name" />
         </StackLayout>
 
         <StackLayout Grid.Row="2" Margin="25,0,25,18">
             <Label Text="Email"
-                   FontFamily="DMSans"
+                   FontFamily="AntoneClean"
                    FontSize="12"
                    Margin="0,0,0,5"
                    TextColor="{StaticResource LabelGrey}" />
             <Entry x:Name="EmailEntry"
-                   FontFamily="DMSans"
+                  FontFamily="AntoneClean"
                    IsPassword="False"
                    TextTransform="Lowercase"
                    Text="{Binding Email}"
@@ -55,24 +55,24 @@
 
         <StackLayout Grid.Row="3" Margin="25,0,25,18">
             <Label Text="Phone"
-                   FontFamily="DMSans"
+                   FontFamily="AntoneClean"
                    FontSize="12"
                    Margin="0,0,0,5"
                    TextColor="{StaticResource LabelGrey}" />
             <Entry x:Name="PhoneEntry"
-                   FontFamily="DMSans"
+                   FontFamily="AntoneClean"
                    Text="{Binding Phone}"
                    Placeholder="Phone" />
         </StackLayout>
 
         <StackLayout Grid.Row="4" Margin="25,0,25,18">
             <Label Text="Password"
-                   FontFamily="DMSans"
+                   FontFamily="AntoneClean"
                    FontSize="12"
                    Margin="0,0,0,5"
                    TextColor="{StaticResource LabelGrey}" />
             <Entry x:Name="PasswordEntry"
-                   FontFamily="DMSans"
+                   FontFamily="AntoneClean"
                    Text="{Binding Password}"
                    Placeholder="Password"
                    IsPassword="true" />
@@ -80,28 +80,28 @@
 
         <StackLayout Grid.Row="5" Margin="25,0,25,0">
             <Label Text="Confirm Password"
-                   FontFamily="DMSans"
+                   FontFamily="AntoneClean"
                    FontSize="12"
                    Margin="0,0,0,5"
                    TextColor="{StaticResource LabelGrey}" />
             <Entry x:Name="ConfirmPasswordEntry"
-                   FontFamily="DMSans"
+                   FontFamily="AntoneClean"
                    Placeholder="Confirm Password"
                    IsPassword="true" />
         </StackLayout>
 
         <StackLayout Grid.Row="6" Margin="25,25,25,0">
             <Button x:Name="RegisterButton"
-                    FontFamily="Poppins"
+                    FontFamily="AntoneBlock"
                     Command="{Binding RegisterCommand}"
-                    BackgroundColor="Black"
+                    BackgroundColor="{StaticResource ButtonBlue}"
                     Text="Sign Up" />
         </StackLayout>
 
         <StackLayout Grid.Row="7" Margin="25,25,25,0">
             <Button x:Name="CancelButton"
-                    BackgroundColor="{StaticResource NiftyRed}"
-                    FontFamily="Poppins"
+                    BackgroundColor="{StaticResource CookoutOrange}"
+                    FontFamily="AntoneBlock"
                     Command="{Binding CancelCommand}"
                     Text="Cancel" />
         </StackLayout>
