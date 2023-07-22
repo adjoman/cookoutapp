@@ -36,10 +36,6 @@ public partial class App : Application
         try
         {
             base.OnStart();
-
-            AppCenter.Start("ios=\"83bcb6f9-77e8-435b-8ba9-f1ffbf0e56bc\";" +
-                      "android=\"5a66adde-0f53-4f34-9b16-72ddda9b5c8b\";",
-                      typeof(Analytics), typeof(Crashes));
         }
         catch (Exception ex)
         {
