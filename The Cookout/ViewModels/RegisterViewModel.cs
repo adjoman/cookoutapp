@@ -155,7 +155,7 @@ namespace The_Cookout.ViewModels
                 {
                     ClientId        = (App.Current as App).cognito_client_id,
                     Password        = Password,
-                    Username        = Utlilities.ParseBeforeAtSymbol(Email),
+                    Username        = Email,
                     UserAttributes  = new List<AttributeType>
                     {
                         new AttributeType { Name = "family_name", Value = FullName },
