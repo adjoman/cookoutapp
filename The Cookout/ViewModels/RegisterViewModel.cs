@@ -158,8 +158,8 @@ namespace The_Cookout.ViewModels
                     Username        = Email,
                     UserAttributes  = new List<AttributeType>
                     {
-                        new AttributeType { Name = "family_name", Value = FullName },
-                        new AttributeType { Name = "given_name", Value = FullName },
+                        new AttributeType { Name = "name", Value = FullName },
+                        //new AttributeType { Name = "given_name", Value = FullName },
                         new AttributeType { Name = "email", Value = Email },
                         new AttributeType { Name = "phone_number", Value = Phone },
                     }
